@@ -3,8 +3,7 @@
 <title>ZTFG - Home</title>
 <link rel="icon" type="image/png" href="./img/iconztfg.png" />
 <style type="text/css">
-<br>
-  body {
+body {
     color: black; background-color: white;
     font-size: 100.01%;
     font-family: Helvetica,Arial,sans-serif;
@@ -74,12 +73,7 @@
     text-align: center;
     height: 30px;
     color: white;
-    background: black url(./img/header3.png) no-repeat 100% 45%;
-    div style="border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
-      border-top-left-radius: 30px;
-      border-top-right-radius: 30px;";
-    
+    background: black url(./img/header3.png) no-repeat 100% 45%;    
   }
 
 
@@ -154,16 +148,6 @@
 </style>
 </head>
 <body>
-
-<div id="Login"><center><br>
-<img src="./img/login_head.png" width="170"><br><br><b>
-Benutzer:<br>
-<textarea cols="20" rows="1"></textarea><br><br>
-Passwort:<br>
-<textarea cols="20" rows="1"></textarea><br><br>
-<input style="height: 40px; width: 80px;" type="reset" value="Login" />
-<input style="height: 40px; width: 100px;" type="reset" value="Registrieren" />
-
 </center>
 </div>
 
@@ -182,18 +166,20 @@ Passwort:<br>
   <div id="Inhalt">
 <center><br><br>
 <img src="./img/login_head.png"><br><br><b>
-Benutzer:<br>
-<textarea cols="30" rows="1"></textarea><br><br>
-Passwort:<br>
-<textarea cols="30" rows="1"></textarea><br><br>
-<input style="height: 40px; width: 80px;" type="reset" value="Login" />
-<input style="height: 40px; width: 100px;" type="reset" value="Registrieren" /><br><br><br><br><br><br>
+
+    <form action="backend/login.php/login" method="post">
+      Benutzer: <br><input type="text" name="username" required><br><br>
+      Passwort: <br><input type="password" name="password" required><br><br>
+      <input type="submit" name="login" value="Login">
+      <input type="submit" name="register" value="Registrieren">
+    </form>
+
 <img src="./img/hinweis.png"><br><br>
 ACHTUNG:<br>
 Die Account Verwaltung wird gerade erst eingerichtet.<br>
-Registrierungen sind aktuell NICHT möglich.<br>
-Der Login ist möglicherweise deaktiviert.<br>
-Wir übernehmen keine Haftung für fehlende Inhalte!<br>
+Registrierungen sind aktuell NICHT mï¿½glich.<br>
+Der Login ist mï¿½glicherweise deaktiviert.<br>
+Wir ï¿½bernehmen keine Haftung fï¿½r fehlende Inhalte!<br>
 
 
 </b>
@@ -212,7 +198,7 @@ Wir übernehmen keine Haftung für fehlende Inhalte!<br>
 	<a href="ts3server://5.175.26.146?"><img src="./img/ts.png" height="30"></a>
 	<a href="https://discord.gg/sdEhAmV"><img src="./img/dc.png" height="30"></a>
 	<a href="spenden.html"><img src="./img/spenden_button.jpg" height="30"></a>
-	<b> www.ZTFG.de © 2018 - Alle Rechte vorbehalten.</b>
+	<b> www.ZTFG.de ï¿½ 2018 - Alle Rechte vorbehalten.</b>
 	<a href="impressum.html">Impressum</a></center></p></div>
 	<body background="./img/background.png">
 
