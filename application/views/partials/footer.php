@@ -1,4 +1,3 @@
-</center>
 <br><br>
 </div>
 

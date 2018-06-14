@@ -1,3 +1,4 @@
+<center>
 <div class="impressum">
 <p>
     <b>Webmaster:</b><br/>
@@ -24,3 +25,4 @@
     ich jedoch keine Gewähr übernehmen. Für externe Inhalte sind ausschließlich deren Betreiber verantwortlich. Alle Grafiken sind entweder selbst erstellt oder via Google Bilder eingefügt.
 </p>
 </div>
+</center>

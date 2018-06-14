@@ -1,3 +1,4 @@
+<center>
 <img src="<?php echo asset_url().'img/ztfg_banner.jpg'?>"><br><b><br>
     <span style="font-size:2.0em">Willkommen,</span><br>
         auf der offiziellen Homepages des Multigaming Clans ZTFG.<br>
@@ -17,3 +18,4 @@
         Aktuell Umsonst im Steam Shop, einfach in den<br>
         n�chsten 100Stunden zur Bibliothek hinzuf�gen,<br>
         nach Ablauf der Aktion gilt der Key ewig.
+</center>        

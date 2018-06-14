@@ -1,3 +1,4 @@
+<center>
 <br><br><br>
 <a href="<?php echo root_url().'oldFiles/kdh.html';?>" onmouseover="austausch2.src='<?php echo asset_url()."img/th_wow_button_hover.png'"?>;" onmouseout="austausch2.src='<?php echo asset_url()."img/th_wow_button.png'"?>;" ><img src="<?php echo asset_url().'img/th_wow_button.png';?>" name="austausch2"></a>
 <a href="<?php echo root_url().'oldFiles/minecraft.html';?>" onmouseover="austausch5.src='<?php echo asset_url()."img/minecraft_button_hover.png'"?>;" onmouseout="austausch5.src='<?php echo asset_url()."img/minecraft_button.png'"?>;" ><img src="<?php echo asset_url().'img/minecraft_button.png';?>" name="austausch5"></a><br>
@@ -6,3 +7,4 @@
 <a href="" onmouseover="austausch1.src='<?php echo asset_url()."img/arma_button_hover.png'"?>;" onmouseout="austausch1.src='<?php echo asset_url()."img/arma_button2.png'"?>;" ><img src="<?php echo asset_url().'img/arma_button2.png';?>" name="austausch1"></a>
 <a href="" onmouseover="austausch6.src='<?php echo asset_url()."img/dayz_button_hover.png'"?>;" onmouseout="austausch6.src='<?php echo asset_url()."img/dayz2_button.png'"?>;" ><img src="<?php echo asset_url().'img/dayz2_button.png';?>" name="austausch6"></a><br>
 <br>
+</center>

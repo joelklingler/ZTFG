@@ -52,7 +52,7 @@ h3 {
     color: red;
 }
 
-h1 {
+.headerImage {
     font-size: 1.5em;
     margin: 0; padding: 1.2em;
     text-align: center;
@@ -132,4 +132,29 @@ a:focus { text-decoration:none; font-weight:bold; background-color:#080; }
     float: left;
     margin: 1em;
     text-align: left;
+}
+
+div#Login {
+    float:right;
+    width:250;
+    height:270;
+    margin-right:100;
+    margin-top:80;
+    color:white;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom:2px solid black;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image:url(../img/bg.gif); background-repeat:repeat; background-position:center top;
+    background-attachment:scroll;    
+    text-align: left;
+    padding: 0 15px 0 15px;
+}
+
+.registerBox {
+    padding: 25px;
 }

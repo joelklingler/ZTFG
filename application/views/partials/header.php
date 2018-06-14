@@ -5,9 +5,10 @@
     <link type="text/css" rel="stylesheet" href=<?php echo "'".asset_url()."css/style.css'";?>/>
 </head>
 <body>
-
+<?php $this->view('partials/login'); ?>
+<?php $this->view('partials/status'); ?>
 <div id="Seite">
-    <h1></h1>
+    <h1 class="headerImage"></h1>
     <ul id="Navigation"><center>
         <p style="margin-top:0.4em; margin-left:0.3em">
         <a href="./Start"><img src="<?php echo asset_url().'img/home_button.png'?>"></a>
@@ -17,4 +18,4 @@
     </ul>
 
     <div id="Inhalt">
-    <center><br>
+<br>

@@ -20,3 +20,4 @@ class Pages extends CI_Controller {
         $this->load->view('pages/oldFiles/'.$page.'.html');
     }
 }
+?>
