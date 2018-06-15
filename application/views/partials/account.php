@@ -1,12 +1,14 @@
 <div id="Login"><br>
-<center><img src="<?php echo asset_url().'img/login_head.png';?>" width="170"><br><br><b></center>
 
 <?php
 if($this->session->has_userdata('userdata')) {
 ?>
-
+<center><h2 style="text-decoration: underline;">Account-Panel</h2></center>
 <form action="account/logout" method="post">
-    <p>Willkommen <?php echo $this->session->userdata('userdata')['username']; ?></p>
+    <h4>Willkommen <?php echo $this->session->userdata('userdata')['username']; ?></h4>
+    <p>Deine Aktionen:</p>
+    <!-- User options -->
+    
     <input type="submit" value="Log-out">
 </form>
 
@@ -14,6 +16,7 @@ if($this->session->has_userdata('userdata')) {
 } else {
 ?>
 
+<center><img src="<?php echo asset_url().'img/login_head.png';?>" width="170"><br><br><b></center>
 <form action="account/login" method="post">
     <table>
         <tr>

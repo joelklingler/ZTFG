@@ -86,6 +86,9 @@ class Account extends CI_Controller {
                     // TODO: Log this. Don't show to user.
                     $operationMessage = $this->db->error();
                 } else {
+                    // Load roles
+                    $sql_query = "SELECT * FROM userRoles WHERE userId=".$user->id.";";
+                    // TODO Finish this
                     // Set session
                     $userSession = array (
                         'id' => $user->id,
