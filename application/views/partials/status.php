@@ -1,8 +1,10 @@
 <?php
-if(isset($_SESSION["msg"])) {?>
-    <div class="status" style="background-color: <?php echo ($_SESSION["lastOp"] == TRUE ? "green" : "red"); ?>">
-        <p><?php echo $_SESSION["msg"]; ?></p>
+if(isset($_SESSION['opState']))
+{
+    $op = $_SESSION['opState']; ?>
+
+    <div class="status" style="background-color: <?php echo ($op["state"] == '1' ? "green" : "red"); ?>">
+        <center><?php echo $op["msg"]; ?></center>
     </div>
-<?php } 
-$_SESSION["msg"] = "";
-?>
+
+<?php } ?>
