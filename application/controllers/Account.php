@@ -49,6 +49,18 @@ class Account extends CI_Controller {
         }
     }
 
+    public function logout() {
+        $this->session->unset_userdata('userdata');
+        $operationMessage = "Erfolgreich ausgeloggt.";
+        $op = array (
+            'msg' => $operationMessage,
+            'state' => '1'
+        );
+        $_SESSION['opState'] = $op;
+        $this->session->mark_as_flash('opState');
+        redirect($this->agent->referrer());
+    }
+
     public function login() {
         $email = $_POST["email"];
         $pw = $_POST["password"];
@@ -97,7 +109,6 @@ class Account extends CI_Controller {
             redirect($this->agent->referrer());
         } else {
             $operationMessage = "Erfolgreich eingeloggt. Willkommen ".$user->username.".";
-            //$operationMessage = $this->session->userdata('userdata')['username'];
             $op = array (
                 'msg' => $operationMessage,
                 'state' => '1'
