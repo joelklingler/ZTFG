@@ -6,7 +6,11 @@ class Pages extends CI_Controller {
         {
             show_404();
         }
-        $this->load->view('partials/header');
+        
+        
+        $data = prepare_user_action_data($this->session->userdata('userdata')['actions']);
+
+        $this->load->view('partials/header', $data);
         $this->load->view('pages/main/'.$page);
         $this->load->view('partials/footer');
     }

@@ -5,7 +5,7 @@
     <link type="text/css" rel="stylesheet" href=<?php echo "'".asset_url()."css/style.css'";?>/>
 </head>
 <body>
-<?php $this->view('partials/account'); ?>
+<?php $this->view('partials/account', $account); ?>
 <?php $this->view('partials/status'); ?>
 <div id="Seite">
     <h1 class="headerImage"></h1>

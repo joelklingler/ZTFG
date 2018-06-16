@@ -6,9 +6,14 @@ if (!function_exists('asset_url()'))
     {
         return base_url().'assets/';
     }
+}
 
+if(!function_exists('root_url()'))
+{
     function root_url()
     {
         return base_url();
     }
 }
+
+?>

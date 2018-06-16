@@ -4,12 +4,11 @@
 if($this->session->has_userdata('userdata')) {
 ?>
 <center><h2 style="text-decoration: underline;">Account-Panel</h2></center>
+<h4>Willkommen <?php echo $this->session->userdata('userdata')['username']; ?> (<?php echo $this->session->userdata('userdata')['roleName']; ?>)</h4>
+<!-- User options -->
+<?php $this->view('partials/actions', $actions); ?>
 <form action="account/logout" method="post">
-    <h4>Willkommen <?php echo $this->session->userdata('userdata')['username']; ?></h4>
-    <p>Deine Aktionen:</p>
-    <!-- User options -->
-    
-    <input type="submit" value="Log-out">
+    <p><input type="submit" value="Log-out"></p>
 </form>
 
 <?php 

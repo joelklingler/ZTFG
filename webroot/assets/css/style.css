@@ -10,25 +10,6 @@ body {
 body { 
     overflow:hidden; 
 }  
-  
-div#Login {
-    float:right;
-    width:250;
-    height:270;
-    margin-right:100;
-    margin-top:80;
-    color:white;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom:2px solid black;
-    border-bottom-left-radius:30px;
-    border-bottom-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    background-image:url(../img/bg.gif); background-repeat:repeat; background-position:center top;
-    background-attachment:scroll;   
-}
 
 div#Seite {
     text-align: left;    
@@ -137,7 +118,7 @@ a:focus { text-decoration:none; font-weight:bold; background-color:#080; }
 div#Login {
     float:right;
     width:250;
-    height:270;
+    min-height:270;
     margin-right:100;
     margin-top:80;
     color:white;

@@ -87,13 +87,33 @@ class Account extends CI_Controller {
                     $operationMessage = $this->db->error();
                 } else {
                     // Load roles
-                    $sql_query = "SELECT * FROM userRoles WHERE userId=".$user->id.";";
-                    // TODO Finish this
+                    $roles = $this->db->query("SELECT * FROM userRoles WHERE idUser=".$user->id." ORDER BY idRole DESC;")->result();
+                    $userRoleId = 1;
+                    $userRoleName = "User";
+                    $actions = array();
+                    if(!empty($roles))
+                    {
+                        // Get highest role
+                        $userRoleId = $roles[0]->idRole;
+                    }
+                    // Get role information
+                    $roleInfo = $this->db->query("SELECT * FROM roles WHERE id=".$userRoleId.";")->row();
+                    if(!isset($roleInfo))
+                    {
+                        $operationMessage = "Interner Fehler (userRoles).";
+                    } else {
+                        $userRoleName = $roleInfo->name;
+                        // Get actions
+                        $actions = $this->db->query("SELECT name, action FROM roleActions WHERE idMinRole <= ".$userRoleId." ORDER BY idminrole ASC;")->result_array();
+                    }
+                    
+
                     // Set session
                     $userSession = array (
                         'id' => $user->id,
-                        'roleId' => 1,
-                        'username' => $user->username                        
+                        'roleName' => $userRoleName,
+                        'username' => $user->username,
+                        'actions' => $actions                        
                     );
 
                     $this->session->set_userdata('userdata', $userSession);
