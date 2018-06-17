@@ -1,5 +1,4 @@
-<div id="Login"><br>
-
+<div id="account"><br>
 <?php
 if($this->session->has_userdata('userdata')) {
 ?>
@@ -35,5 +34,10 @@ oder <a href="./Register">registrieren</a>
 <?php 
 }
 ?>
+
+<hr>
+
+<h5>Server-Status</h5>
+<?php $this->view('partials/server_state'); ?>
 
 </div>

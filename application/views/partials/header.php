@@ -1,8 +1,9 @@
 <html>
 <head>
-    <title>ZTFG - Home</title>
+    <title>ZTFG</title>
     <link rel="icon" type="image/png" href=<?php echo "'".asset_url()."img/iconztfg.png'";?>/>
     <link type="text/css" rel="stylesheet" href=<?php echo "'".asset_url()."css/style.css'";?>/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
 <?php $this->view('partials/account', $account); ?>
@@ -18,4 +19,4 @@
     </ul>
 
     <div id="Inhalt">
-<br>
+<br/>

@@ -23,7 +23,7 @@
             </tr>
             <tr></tr>
         </table>
-        <input type="checkbox" name="agbRead" required> AGBs gelesen und akzeptiert
+        <input type="checkbox" name="agbRead" required> <a href="#">AGBs</a> gelesen und akzeptiert
         <p><input type="submit" value="Absenden"></p>
     </form>
 </div>
