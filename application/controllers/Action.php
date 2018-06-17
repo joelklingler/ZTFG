@@ -19,10 +19,10 @@ class Action extends CI_Controller {
     }
 
     public function serverState() {
-        $this->load->model('server');
-        $empyrionServer = new Server();
-        $tttServer = new Server();
-        $minecraftServer = new Server();
+        $this->load->model('server_model');
+        $empyrionServer = new Server_model();
+        $tttServer = new Server_model();
+        $minecraftServer = new Server_model();
         
         $empyrionServer->buildData("Empyrion", "5.175.26.146", 30000);
         $tttServer->buildData("ZTFG-TTT-Server-GER", "5.175.26.146", 27015);

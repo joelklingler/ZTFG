@@ -1,5 +1,5 @@
 <?php
-class Server extends CI_Model {
+class Server_model extends CI_Model {
     public $name;
     public $ip;
     public $port;
