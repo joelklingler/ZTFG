@@ -134,4 +134,4 @@ $autoload['language'] = array();
 */
 $autoload['model'] = array();
 
-$autoload['helper'] = array('form', 'url', 'utility', 'user_actions');
+$autoload['helper'] = array('form', 'url', 'utility', 'user_actions', 'view');

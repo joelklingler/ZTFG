@@ -11,10 +11,10 @@
     <h1 class="headerImage"></h1>
     <ul id="Navigation"><center>
         <p style="margin-top:0.4em; margin-left:0.3em">
-        <a href="./Start"><img src="<?php echo asset_url().'img/home_button.png'?>"></a>
-        <a href="./Wir"><img src="<?php echo asset_url().'img/wir_button.png'?>"></a>
-        <a href="./Server"><img src="<?php echo asset_url().'img/server_button.png'?>"></a>
-        <a href="./Support"><img src="<?php echo asset_url().'img/support_button.png'?>"></a></p></center>
+        <a href="<?php echo root_url()."Start";?>"><img src="<?php echo asset_url().'img/home_button.png'?>"></a>
+        <a href="<?php echo root_url()."Wir";?>"><img src="<?php echo asset_url().'img/wir_button.png'?>"></a>
+        <a href="<?php echo root_url()."Server";?>"><img src="<?php echo asset_url().'img/server_button.png'?>"></a>
+        <a href="<?php echo root_url()."Support";?>"><img src="<?php echo asset_url().'img/support_button.png'?>"></a></p></center>
     </ul>
 
     <div id="Inhalt">

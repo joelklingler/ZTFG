@@ -7,7 +7,7 @@ if($this->session->has_userdata('userdata')) {
 <h4>Willkommen <?php echo $this->session->userdata('userdata')['username']; ?> (<?php echo $this->session->userdata('userdata')['roleName']; ?>)</h4>
 <!-- User options -->
 <?php $this->view('partials/actions', $actions); ?>
-<form action="account/logout" method="post">
+<form action="<?php echo base_url(); ?>account/logout" method="post">
     <p><input type="submit" value="Log-out"></p>
 </form>
 
@@ -16,7 +16,7 @@ if($this->session->has_userdata('userdata')) {
 ?>
 
 <center><img src="<?php echo asset_url().'img/login_head.png';?>" width="170"><br><br><b></center>
-<form action="account/login" method="post">
+<form action="<?php echo base_url(); ?>account/login" method="post">
     <table>
         <tr>
             <td>E-Mail</td>

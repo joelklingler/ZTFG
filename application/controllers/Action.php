@@ -1,19 +1,21 @@
 <?php
 class Action extends CI_Controller {
-    public function account() {
-        redirect($this->agent->referrer());
-    }
+    public function view($actionId) {
 
-    public function admin() {
-        redirect($this->agent->referrer());
-    }
-
-    public function dayz_codes() {
-        redirect($this->agent->referrer());
-    }
-
-    public function server() {
-        redirect($this->agent->referrer());
+        if(isset($actionId)) {
+            // Load the action
+            $this->load->database();
+            $query = $this->db->query('SELECT * FROM actions WHERE id = "'.$actionId.'";');
+            $action = $query->row();            
+            if(isset($action)) {
+                $path = 'pages/actions/'.$action->action.'.php';
+                view($path, $action->minRoleLevel);
+            } else {
+                show_404();
+            }
+        } else {
+            show_404();
+        }
     }
 }
 ?>

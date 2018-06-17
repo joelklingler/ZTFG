@@ -2,7 +2,7 @@
     <h1>Registrieren</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus tortor id sapien bibendum congue. Sed dapibus dolor sit amet elit fermentum pretium.</p>
 </center>
-<div class="registerBox">
+<div class="paddedContent">
     <form action="./account/register" method="post">
         <table>
             <tr>

@@ -2,17 +2,8 @@
 class Pages extends CI_Controller {
     public function view($page = 'Start')
     {
-        if(!file_exists(APPPATH.'views/pages/main/'.$page.'.php'))
-        {
-            show_404();
-        }
-        
-        
-        $data = prepare_user_action_data($this->session->userdata('userdata')['actions']);
-
-        $this->load->view('partials/header', $data);
-        $this->load->view('pages/main/'.$page);
-        $this->load->view('partials/footer');
+        $path = 'pages/main/'.$page.'.php';
+        view($path);
     }
 
     public function viewOld($page = 'Start')
