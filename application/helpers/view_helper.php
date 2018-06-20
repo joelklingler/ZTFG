@@ -4,7 +4,6 @@ if (!function_exists('view()'))
 {
     function view($path, $minRoleLevel=0) {
         $CI = &get_instance();
-
         if(!file_exists(APPPATH.'views/'.$path)) {
             show_404();
         }        

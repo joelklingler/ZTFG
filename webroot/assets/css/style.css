@@ -1,153 +1,72 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+html, body {
+    max-width: 100%;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 body {
-    color: black; background-color: white;
-    font-size: 100.01%;
-    font-family: Helvetica,Arial,sans-serif;
-    margin: 0; padding: 0em 0;
-    text-align: center;  
-	color:white;
-}
-  
-body { 
-    overflow:hidden; 
-}  
-
-div#Seite {
-    text-align: left;    
-    margin: 0 auto;      
-    width: 760px;
-    padding: 0;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    color: white; background-color: black;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    background-image:url(); background-repeat:no-repeat; background-position:center top;
-    background-attachment:scroll;
+    background-image:url(../img/background.png);
+    background-attachment: fixed;    
+    background-repeat: no-repeat;
 }
 
-h3 {
-    font-size: 1.5em;
-    margin: 0 0; padding: 0.3em;
-    text-align: left;
-    color: red;
+.main-header img {
+    width: 100%;
 }
 
-.headerImage {
-    font-size: 1.5em;
-    margin: 0; padding: 1.2em;
-    text-align: center;
-    height: 30px;
-    color: white;
-    background: black url(../img/header3.png) no-repeat 100% 45%;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-ul#Navigation {
-    font-size: 0.83em;
-    float: center;
-    height: 50px;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    margin: 0 0 0em; padding: 0;
-    color: white; background-color: black;
+.main-nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 5px 0 5px 0;
     background-image:url(../img/links2.jpg);background-position:center top;
-    background-attachment:scroll;    
+    justify-content: center;
+    align-items: center;
 }
 
-div#Inhalt {
-    margin: 0 0 0em 0px;	
-    height: 760px;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 0 0 0em;
-    color: white; background-color: black;
-    background-image:url(../img/background2.jpg); background-repeat:no-repeat; background-position:center top;
-    background-attachment:scroll;
-	overflow:auto;
+.main-nav ul li {
+    display: inline;
+    margin: 0 5px 0 0;
 }
 
-* html div#Inhalt {
-    color: white;
-    height: 1em;  
-    margin-left:20px;
-    margin-bottom: 0;
+.main-content, .main-footer {
+    padding: 5px;
 }
 
-div#Inhalt h2 {
-    font-size: 1.3em;
-    margin: 0.2em 0;
-    margin-left:20px;
-    color: white;
- }
-
- div#Inhalt p {
-    font-size: 1em;
-    margin: 1em 0;
-    margin-left:20px;
+.main-content {
+    width: 100%;
+    background-image:url(../img/background2.jpg);
     color: white;
 }
 
-p#Fusszeile {
-    clear: both;
-    font-size: 0.83em;
-    margin: 0; padding: 0.1em;
-    text-align: right;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    color:white;
+.main-content img {
+    max-width: 100%;
 }
 
-a:link { text-decoration:none; font-weight:bold; color:#800000; }
-a:visited { text-decoration:none; font-weight:bold; color:#800000; }
-a:focus { text-decoration:none; font-weight:bold; background-color:#080; }
-
-.impressum  {
-    float: left;
-    margin: 1em;
-    text-align: left;
+.main-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
 }
 
-div#account {
-    float:right;
-    width:250;
-    min-height:270;
-    margin-right:100;
-    margin-top:80;
-    color:white;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom:2px solid black;
-    border-bottom-left-radius:30px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-image:url(../img/bg.gif); background-repeat:repeat; background-position:center top;
-    background-attachment:scroll;    
-    text-align: left;
-    padding: 0 15px 20px 15px;
-}
-
-.paddedContent {
-    padding: 25px;
-}
-
-.online {
-    color: green;
-}
-
-.offline {
-    color: red;
-}
-
-.loading {
-    color: yellow;
+.row {
+    width: auto;
 }
