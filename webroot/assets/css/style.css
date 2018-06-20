@@ -7,6 +7,7 @@
 html, body {
     max-width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .main {
@@ -52,6 +53,10 @@ body {
     color: white;
 }
 
+.main-content td {
+    color: white;
+}
+
 .main-content img {
     max-width: 100%;
 }
@@ -64,9 +69,57 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    color: white;
+    color: white
 }
 
 .row {
     width: auto;
+}
+
+.side-bar {
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.side-bar-content {
+    background-color: rgba(213, 209, 182, 1);
+    padding: 0 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.side-bar .header-break img {
+    width: 304%; 
+    opacity: 0;
+}
+
+.server-state .online {
+    color: green;
+}
+
+.server-state .offline {
+    color: red;
+}
+
+.server-state .loading {
+    color: orange;
+}
+
+.login-form td input, .register-form td input {
+    margin-left: 10px;
+    width: 165px;
+}
+
+@media (max-width: 765px) {
+    .side-bar {
+        width: 100%;
+        height: 250px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
 }

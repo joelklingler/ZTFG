@@ -17,3 +17,12 @@ ERROR - 2018-06-20 20:33:22 --> Severity: Warning --> include(): Failed opening 
 ERROR - 2018-06-20 20:39:50 --> 404 Page Not Found: OldFiles/img
 ERROR - 2018-06-20 20:39:50 --> Severity: Warning --> include(E:\XAMPP\htdocs\ZTFG\application\views\errors\html\error_404.php): failed to open stream: No such file or directory E:\XAMPP\htdocs\ZTFG\system\core\Exceptions.php 182
 ERROR - 2018-06-20 20:39:50 --> Severity: Warning --> include(): Failed opening 'E:\XAMPP\htdocs\ZTFG\application\views\errors\html\error_404.php' for inclusion (include_path='E:\XAMPP\php\PEAR') E:\XAMPP\htdocs\ZTFG\system\core\Exceptions.php 182
+ERROR - 2018-06-20 20:45:25 --> Severity: Warning --> include(E:\XAMPP\htdocs\ZTFG\application\views\errors\html\error_general.php): failed to open stream: No such file or directory E:\XAMPP\htdocs\ZTFG\system\core\Exceptions.php 182
+ERROR - 2018-06-20 20:45:25 --> Severity: Warning --> include(): Failed opening 'E:\XAMPP\htdocs\ZTFG\application\views\errors\html\error_general.php' for inclusion (include_path='E:\XAMPP\php\PEAR') E:\XAMPP\htdocs\ZTFG\system\core\Exceptions.php 182
+ERROR - 2018-06-20 20:36:09 --> Severity: Notice --> Undefined variable: dcsServer E:\XAMPP\htdocs\ZTFG\application\controllers\Action.php 30
+ERROR - 2018-06-20 20:36:09 --> Severity: Error --> Call to a member function buildData() on null E:\XAMPP\htdocs\ZTFG\application\controllers\Action.php 30
+ERROR - 2018-06-20 20:36:09 --> Severity: Warning --> include(E:\XAMPP\htdocs\ZTFG\application\views\errors\html\error_php.php): failed to open stream: No such file or directory E:\XAMPP\htdocs\ZTFG\system\core\Exceptions.php 268
+ERROR - 2018-06-20 20:36:09 --> Severity: Warning --> include(): Failed opening 'E:\XAMPP\htdocs\ZTFG\application\views\errors\html\error_php.php' for inclusion (include_path='E:\XAMPP\php\PEAR') E:\XAMPP\htdocs\ZTFG\system\core\Exceptions.php 268
+ERROR - 2018-06-20 20:44:20 --> 404 Page Not Found: 
+ERROR - 2018-06-20 20:44:20 --> Severity: Warning --> include(E:\XAMPP\htdocs\ZTFG\application\views\errors\html\error_404.php): failed to open stream: No such file or directory E:\XAMPP\htdocs\ZTFG\system\core\Exceptions.php 182
+ERROR - 2018-06-20 20:44:20 --> Severity: Warning --> include(): Failed opening 'E:\XAMPP\htdocs\ZTFG\application\views\errors\html\error_404.php' for inclusion (include_path='E:\XAMPP\php\PEAR') E:\XAMPP\htdocs\ZTFG\system\core\Exceptions.php 182

@@ -23,10 +23,12 @@ class Action extends CI_Controller {
         $empyrionServer = new Server_model();
         $tttServer = new Server_model();
         $minecraftServer = new Server_model();
+        $dcsServer = new Server_model();
         
         $empyrionServer->buildData("Empyrion", "5.175.26.146", 30000);
         $tttServer->buildData("ZTFG-TTT-Server-GER", "5.175.26.146", 27015);
         $minecraftServer->buildData("Minecraft", "5.175.26.146", 1892);
+        $dcsServer->buildData("DCS-World", "5.175.26.146", 10308);
 
         $servers = array (
             array(
@@ -40,6 +42,10 @@ class Action extends CI_Controller {
             array(
                 $minecraftServer,
                 $minecraftServer->isAlive()
+            ),
+            array(
+                $dcsServer,
+                $dcsServer->isAlive()
             )
         );
         echo json_encode($servers);
