@@ -23,6 +23,14 @@ body {
     background-repeat: no-repeat;
 }
 
+a:link, a:visited, a:active {
+    color: #A52A00;
+}
+
+a:hover {
+    color: #D9AE09;
+}
+
 .main-header img {
     max-width: 100%;
 }
@@ -49,6 +57,10 @@ body {
 .main-nav ul li {
     display: inline;
     margin: 0 5px 0 0;
+}
+
+.main-nav ul li:last-child {
+    display: none;
 }
 
 .show-menue {
@@ -86,6 +98,7 @@ body {
 
 .row {
     max-width: 760px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .side-bar {
@@ -102,6 +115,7 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .login-form td {
@@ -127,7 +141,7 @@ body {
 
 .login-form td input, .register-form td input {
     margin-left: 10px;
-    width: 165px;
+    width: 160px;
 }
 
 .account-mobile {
@@ -141,6 +155,10 @@ body {
     .side-bar {
         display: none;
     }
+
+    .main-nav ul li:last-child {
+        display: inline;
+    }
 }
 
 /* mobiles */
@@ -148,6 +166,8 @@ body {
     .main-nav {
         padding: 0 5px;
     }
+
+    
     
     .show-menue {
         display: inline;

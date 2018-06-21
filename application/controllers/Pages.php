@@ -3,7 +3,11 @@ class Pages extends CI_Controller {
     public function view($page = 'Start')
     {
         $path = 'pages/main/'.$page.'.php';
-        view($path);
+        if($page == "Account_mobile") {
+            view_with_data($path, prepare_user_action_data($this->session->userdata('userdata')['actions']));
+        } else {
+            view($path);
+        }
     }
 
     public function viewOld($page = 'Start')

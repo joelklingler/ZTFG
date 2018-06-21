@@ -1,6 +1,5 @@
 <script>
 $.get("<?php echo root_url();?>action/serverState", function(data) {
-    console.log(data);
     var servers = JSON.parse(data);
     $(".server-state").empty();
     servers.forEach(function(element) {
@@ -17,5 +16,5 @@ $.get("<?php echo root_url();?>action/serverState", function(data) {
 
 <h3>Server-Status</h3>
 <div class="server-state">
-    <span class="loading">Laden...</span>
+    <span class="loading"><i class="fas fa-spinner fa-pulse"></i> Laden...</span>
 </div>
