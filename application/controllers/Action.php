@@ -8,8 +8,20 @@ class Action extends CI_Controller {
             $query = $this->db->query('SELECT * FROM actions WHERE id = "'.$actionId.'";');
             $action = $query->row();            
             if(isset($action)) {
-                $path = 'pages/actions/'.$action->action.'.php';
-                view($path, $action->minRoleLevel);
+                $path = 'pages/actions/'.$action->view.'.php';
+                // Load data
+                $data = "NODATA";
+                switch($actionId) {
+                    case 4:
+                        // Admin-Panel
+                        $usersQuery = $this->db->query('SELECT * FROM users;');
+                        $rolesQuery = $this->db->query('SELECT * FROM roles;');
+                        $data = array(
+                            "users" => $usersQuery->result(),
+                            "roles" => $rolesQuery->result()
+                        );
+                }
+                view_with_data($path, $data, $action->minRoleLevel);
             } else {
                 show_404();
             }
@@ -26,7 +38,7 @@ class Action extends CI_Controller {
         $dcsServer = new Server_model();
         
         $empyrionServer->buildData("Empyrion", "5.175.26.146", 30000);
-        $tttServer->buildData("ZTFG-TTT-Server-GER", "5.175.26.146", 27015);
+        $tttServer->buildData("G'Mod-TTT", "5.175.26.146", 27015);
         $minecraftServer->buildData("Minecraft", "5.175.26.146", 1892);
         $dcsServer->buildData("DCS-World", "5.175.26.146", 10308);
 

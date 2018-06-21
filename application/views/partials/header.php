@@ -11,12 +11,21 @@
     <script type="text/javascript" src="<?php echo asset_url().'js/overhang.min.js';?>"></script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <?php $this->view('partials/status'); ?>
 <div class="main">
     <div class="main-row">
         <div class="row">
             <header class="main-header">
-                <img src="<?php echo asset_url().'img/header3.png';?>"/>
+                <a href="<?php echo root_url()."Start";?>"><img src="<?php echo asset_url().'img/header3.png';?>"/></a>
             </header>
             <nav class="main-nav">
                 <span class="show-menue">Menü<a href="#" alt="toggle menue"><i class="fas fa-bars"></i></a></span>

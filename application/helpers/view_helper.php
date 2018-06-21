@@ -27,7 +27,7 @@ function view_with_data($path, $data, $minRoleLevel=0) {
     $userData = prepare_user_action_data($CI->session->userdata('userdata')['actions']);
 
     $CI->load->view('partials/header', $userData);
-    if(!$CI->session->has_userdata('userdata') && $CI->session->userdata('userdata')['roleLevel'] < $minRoleLevel)
+    if(!$CI->session->has_userdata('userdata') || $CI->session->userdata('userdata')['roleLevel'] < $minRoleLevel)
     {
         $CI->load->view('pages/main/security_error');    
     } else {

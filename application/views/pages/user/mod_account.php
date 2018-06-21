@@ -19,7 +19,7 @@
         </tr>
     </table>
     <h4 style="text-decoration: underline;">Passwort ändern</h4>
-    <form action="<?php echo base_url(); ?>account/changepw" method="post">
+    <form action="<?php echo base_url(); ?>user/changepw" method="post">
         <table>
             <tr>
                 <td>Altes Passwort:</td>

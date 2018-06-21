@@ -1,20 +1,8 @@
 <center>
 <img src="<?php echo asset_url().'img/ztfg_banner.jpg'?>">
-<p>auf der offiziellen Homepages des Multigaming Clans ZTFG.<br>
+<p>Die offizielle Homepages des Multigaming Clans ZTFG.<br>
 Hier findet ihr alle Informationen über unsere Server,<br>
 unsere Mitglieder und andere Dinge.</p><br/>
 <img src="<?php echo asset_url().'img/news1.png'?>">
-<h2>NEWS - 06.06.2018</h2>
-<p>Die Homepage hat ein neues Update spendiert bekommen.<br>
-Unser Empyrion Server hat nun wieder eine eigene Seite<br>
-und wird wiederbelebt, diesmal mit einer ausgereiften<br>
-Server Software sowie mit Tirim als Server Manager.<br>
-Die Social Media Links wurden erweitert, grafisch überarbeitet<br>
-und wandern von der Navigation in die Fusszeile.</p><br/>
-<img src="<?php echo asset_url().'img/steam_keys.png'?>">
-<h2>Kostenlose Steam Keys:</h2>
-<p>Totally Accurate Battlegrounds:<br>
-Aktuell Umsonst im Steam Shop, einfach in den<br>
-nächsten 100Stunden zur Bibliothek hinzufügen,<br>
-nach Ablauf der Aktion gilt der Key ewig.</p><br/>
+<div class="fb-page" data-href="https://www.facebook.com/ztfgo/" data-tabs="timeline" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ztfgo/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ztfgo/">Zombie Task Force Germany</a></blockquote></div>
 </center>

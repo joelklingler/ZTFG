@@ -30,6 +30,7 @@
 </div>
 
 <script type="text/javascript" src="<?php echo asset_url().'js/navigation.js';?>"></script> 
+<script type="text/javascript" src="<?php echo asset_url().'js/admin.js';?>"></script> 
 
 </body>
 </html>

@@ -21,6 +21,7 @@ body {
     background-image:url(../img/background.png);
     background-attachment: fixed;    
     background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a:link, a:visited, a:active {
@@ -141,11 +142,33 @@ a:hover {
 
 .login-form td input, .register-form td input {
     margin-left: 10px;
-    width: 160px;
+    width: 155px;
 }
 
 .account-mobile {
     display: none;
+}
+
+.admin-users {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-users th {
+    color: #A52A00;
+    text-align: left;
+}
+
+.admin-users td {
+    border: none;
+}
+
+.admin-users tr.highlighted {
+    background-color: #D9AE09;
+}
+
+.highlight {
+    color: #D9AE09;
 }
 
 /* MEDIA QUERIES */

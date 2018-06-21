@@ -3,7 +3,7 @@
 <?php
     foreach ($data as $action)
     {
-        echo "<li><a href=".base_url()."action/".$action["id"].">".$action["name"]."</a></li>";
+        echo "<li><a href=".base_url().$action["controller"]."/".$action["id"].">".$action["name"]."</a></li>";
     }
 ?>
 </ul>
