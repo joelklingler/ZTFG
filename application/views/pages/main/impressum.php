@@ -22,7 +22,5 @@
 <p>Teamspeak3 IP: 5.175.26.146</p>
 <p>
     <b>Haftung für Inhalte:</b><br/>
-    Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.<br/>
-    Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann<br/>
-    ich jedoch keine Gewähr übernehmen. Für externe Inhalte sind ausschließlich deren Betreiber verantwortlich.<br/>Alle Grafiken sind entweder selbst erstellt oder via Google Bilder eingefügt.
+    Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.<br/>Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Für externe Inhalte sind ausschließlich deren Betreiber verantwortlich.<br/>Alle Grafiken sind entweder selbst erstellt oder via Google Bilder eingefügt.
 </p>

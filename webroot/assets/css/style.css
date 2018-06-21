@@ -5,9 +5,10 @@
 }
 
 html, body {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     overflow-x: hidden;
+    margin: 0;
 }
 
 .main {
@@ -23,7 +24,14 @@ body {
 }
 
 .main-header img {
+    max-width: 100%;
+}
+
+.main-nav {
     width: 100%;
+    margin: 0;
+    background-image:url(../img/links2.jpg);
+    background-position:center top;
 }
 
 .main-nav ul {
@@ -33,7 +41,7 @@ body {
     flex-wrap: wrap;
     list-style-type: none;
     padding: 5px 0 5px 0;
-    background-image:url(../img/links2.jpg);background-position:center top;
+    margin: 0;
     justify-content: center;
     align-items: center;
 }
@@ -41,6 +49,10 @@ body {
 .main-nav ul li {
     display: inline;
     margin: 0 5px 0 0;
+}
+
+.show-menue {
+   display: none;
 }
 
 .main-content, .main-footer {
@@ -73,7 +85,7 @@ body {
 }
 
 .row {
-    width: auto;
+    max-width: 760px;
 }
 
 .side-bar {
@@ -85,9 +97,15 @@ body {
 }
 
 .side-bar-content {
-    background-color: rgba(213, 209, 182, 1);
+    background-image:url(../img/bg.gif); background-repeat:repeat; background-position:center top;
     padding: 0 5px 5px 5px;
+    border: 2px solid black;
     border-radius: 5px;
+    color: white;
+}
+
+.login-form td {
+    color: white;
 }
 
 .side-bar .header-break img {
@@ -112,14 +130,54 @@ body {
     width: 165px;
 }
 
-@media (max-width: 765px) {
+.account-mobile {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* tablets */
+@media screen and (max-width: 956px) {
     .side-bar {
-        width: 100%;
-        height: 250px;
+        display: none;
+    }
+}
+
+/* mobiles */
+@media screen and (max-width: 691px) {
+    .main-nav {
+        padding: 0 5px;
+    }
+    
+    .show-menue {
+        display: inline;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
     }
 
-    .main {
+    .show-menue a {
+        float: right;
+        color: white;        
+    }
+
+    .main-nav ul {
+        display: none;
+    }
+
+    .main-nav ul li {
+        width: 51%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .main-nav ul.display {
         display: flex;
-        flex-direction: column;
+    }
+    
+    .main-header img {
+        min-width: 125%;
+        position: relative;
+        left: -12.5%;
     }
 }

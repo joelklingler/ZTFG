@@ -29,5 +29,7 @@
     </div>
 </div>
 
+<script src="<?php echo asset_url().'js/navigation.js';?>"></script> 
+
 </body>
 </html>
